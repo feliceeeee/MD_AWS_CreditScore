@@ -97,6 +97,7 @@ def main():
 
         try:
             result = invoke_endpoint(input_data)
+            st.write(result)
             predicted_label = result["prediction"]
             confidence = result["confidence"]
             probability_df = pd.DataFrame(
